@@ -1,0 +1,262 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>MedWise - Premium Bootstrap Template for Hospitals, Clinics, Doctors - Bootstrap Medical and Health Template</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <!--Bootstrap Framework Version 3.3.7-->
+    <link href="~/Content/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+
+    <!--Font Awesome Version 4.6.3 -->
+    <link href="~/Content/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+
+    <!-- Medical Icons -->
+    <link href="~/Content/css/medical-icons.css" type="text/css" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link href="~/Content/css/vendors.css" type="text/css" rel="stylesheet">
+    <link href="~/Content/css/style.css" type="text/css" rel="stylesheet" id="style">
+    <link href="~/Content/css/components.css" type="text/css" rel="stylesheet" id="components">
+
+    <!--Google Fonts-->
+    @*<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Volkhov:400,400i" rel="stylesheet">*@
+
+    <!-- Respond.js and HTML shiv provide HTML5 support in older browsers like IE9 and 8 -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    @*<script>
+           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+               (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+               m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+           })(window,document,'script','../../../../www.google-analytics.com/analytics.js','ga');
+
+           ga('create', 'UA-79657248-2', 'auto');
+           ga('send', 'pageview');
+        </script>*@
+
+</head>
+<body>
+    <div class="loader-backdrop">
+        <!-- Loader -->
+        <div class="loader">
+        </div>
+    </div>
+
+    <header class="header-1">
+        <nav class="navbar navbar-default">
+            <div >
+                 @Html.Partial("~/Views/Shared/_LoginPartial.cshtml")
+            </div>
+            </br> 
+            </br>
+            <div class="container">
+               
+                <div class="navbar-header">
+                    <a  >
+                        <img src="~/Content/images/epione.png" alt="logo">
+                    </a>
+                </div>
+               
+                <div class="collapse navbar-collapse" id="main-navigation">
+                    <!-- Main Menu -->
+             
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="mega-sub-menu">
+                            <a href="#">Appointments</a>   
+                            <ul class="sub-menu">
+                                <li><a href="blog-list.html">Make Appointment</a></li>
+                                <li><a href="blog-list.html">My Appointments</a></li>
+
+                            </ul>                          
+                        </li>
+                        <li class="mega-sub-menu">
+                            <a href="#">My Medical Cursus</a>          <!-- Mega Menu -->
+
+                        </li>
+                        <li>
+                            <a href="#">Chat</a>
+                            <ul class="sub-menu">
+                                <!-- Sub Menu -->
+                                <li><a href="blog-list.html">Blog List</a></li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                            <ul class="sub-menu">
+                                <!-- Sub Menu -->
+                                <li><a href="contact-1.html">Contact Version 1</a></li>
+                                <li><a href="contact-2.html">Contact Version 2</a></li>
+                                <li><a href="contact-3.html">Contact Version 3</a></li>
+                            </ul>
+                        </li>
+
+                     
+                    </ul>
+
+                    @*<ul class="nav navbar-nav navbar-right">
+
+
+                        </ul>*@
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+
+
+    @* <div class="jumbotron" style="background-image: url('~/Content/images/slider-10.jpg')">*@
+    <div class="container">
+        <div class="row flex-row">
+
+            <form id="main-contact-form" novalidate="novalidate" >
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <input class="form-control" type="text" placeholder="Médecin, établissement, spécialité…" id="fname" name="fname">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <input class="form-control" type="text" placeholder="Où" id="lname" name="lname">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <button class="btn btn-primary" type="submit" name="submit">
+                                <i class="fa fa-paper-plane"></i> Rechercher
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </form>
+
+
+
+        </div>
+    </div>
+    <div class="bgcolor1 pt-40 pb-40">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="department-slider">
+                        <div class="slider-items owl-carousel owl-theme owl-loaded">
+
+
+
+
+
+
+                            <div class="owl-stage-outer">
+                                <div class="owl-stage" style="transform: translate3d(-1920px, 0px, 0px); transition: all 1.5s ease 0s; width: 2880px;">
+                                    <div class="owl-item cloned" style="width: 240px; margin-right: 0px;">
+                                        <div class="department-box-3 text-center">
+                                            <i class="med-icon icon-i-cath-lab"></i>
+                                            <hr class="hr-2">
+                                            <h4 class="inverse"><a href="department-single.html">CT Scan</a></h4>
+                                        </div>
+                                    </div><div class="owl-item cloned" style="width: 240px; margin-right: 0px;">
+                                        <div class="department-box-3 text-center">
+                                            <i class="med-icon icon-i-ophthalmology"></i>
+                                            <hr class="hr-2">
+                                            <h4 class="inverse"><a href="department-single.html">Vision Care</a></h4>
+                                        </div>
+                                    </div><div class="owl-item cloned" style="width: 240px; margin-right: 0px;">
+                                        <div class="department-box-3 text-center">
+                                            <i class="med-icon icon-i-nursery"></i>
+                                            <hr class="hr-2">
+                                            <h4 class="inverse"><a href="department-single.html">Child Health</a></h4>
+                                        </div>
+                                    </div><div class="owl-item" style="width: 240px; margin-right: 0px;">
+                                        <div class="department-box-3 text-center">
+                                            <i class="med-icon icon-i-laboratory"></i>
+                                            <hr class="hr-2">
+                                            <h4 class="inverse"><a href="department-single.html">Pathlab Services</a></h4>
+                                        </div>
+                                    </div><div class="owl-item" style="width: 240px; margin-right: 0px;">
+                                        <div class="department-box-3 text-center">
+                                            <i class="med-icon icon-i-hearing-assistance"></i>
+                                            <hr class="hr-2">
+                                            <h4 class="inverse"><a href="department-single.html">Hearing Aid</a></h4>
+                                        </div>
+                                    </div><div class="owl-item" style="width: 240px; margin-right: 0px;">
+                                        <div class="department-box-3 text-center">
+                                            <i class="med-icon icon-i-dental"></i>
+                                            <hr class="hr-2">
+                                            <h4 class="inverse"><a href="department-single.html">Dental Checkup</a></h4>
+                                        </div>
+                                    </div><div class="owl-item" style="width: 240px; margin-right: 0px;">
+                                        <div class="department-box-3 text-center">
+                                            <i class="med-icon icon-i-cath-lab"></i>
+                                            <hr class="hr-2">
+                                            <h4 class="inverse"><a href="department-single.html">CT Scan</a></h4>
+                                        </div>
+                                    </div><div class="owl-item" style="width: 240px; margin-right: 0px;">
+                                        <div class="department-box-3 text-center">
+                                            <i class="med-icon icon-i-ophthalmology"></i>
+                                            <hr class="hr-2">
+                                            <h4 class="inverse"><a href="department-single.html">Vision Care</a></h4>
+                                        </div>
+                                    </div><div class="owl-item active" style="width: 240px; margin-right: 0px;">
+                                        <div class="department-box-3 text-center">
+                                            <i class="med-icon icon-i-nursery"></i>
+                                            <hr class="hr-2">
+                                            <h4 class="inverse"><a href="department-single.html">Child Health</a></h4>
+                                        </div>
+                                    </div><div class="owl-item cloned active" style="width: 240px; margin-right: 0px;">
+                                        <div class="department-box-3 text-center">
+                                            <i class="med-icon icon-i-laboratory"></i>
+                                            <hr class="hr-2">
+                                            <h4 class="inverse"><a href="department-single.html">Pathlab Services</a></h4>
+                                        </div>
+                                    </div><div class="owl-item cloned active" style="width: 240px; margin-right: 0px;">
+                                        <div class="department-box-3 text-center">
+                                            <i class="med-icon icon-i-hearing-assistance"></i>
+                                            <hr class="hr-2">
+                                            <h4 class="inverse"><a href="department-single.html">Hearing Aid</a></h4>
+                                        </div>
+                                    </div><div class="owl-item cloned" style="width: 240px; margin-right: 0px;">
+                                        <div class="department-box-3 text-center">
+                                            <i class="med-icon icon-i-dental"></i>
+                                            <hr class="hr-2">
+                                            <h4 class="inverse"><a href="department-single.html">Dental Checkup</a></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><div class="owl-controls"><div class="owl-nav"><div class="owl-prev" style="display: none;">prev</div><div class="owl-next" style="display: none;">next</div></div><div class="owl-dots" style=""><div class="owl-dot"><span></span></div><div class="owl-dot active"><span></span></div></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div>
+        @*@RenderBody()*@
+    </div>
+   
+
+   @{ Html.RenderPartial("FrontFooter"); }
+
+</body>
+</html>
